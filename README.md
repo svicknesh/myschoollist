@@ -60,7 +60,7 @@ if !found {
 
 ```go
 stateShortname := "pen" // case insensitive
-state, found := list.StateGetByID(stateShortname)
+state, found := list.StateGetByShortname(stateShortname)
 if !found {
     log.Printf("State ID %d not found", stateID)
 }
